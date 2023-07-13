@@ -1,0 +1,33 @@
+<launch>
+    <arg name="simulation_mode" default="false" />
+
+    <rosparam file="$(find iiwa_surgery)/config/iiwa_surgery_params.yaml" command="load"/>
+
+  
+   <group if="$(arg simulation_mode)">
+        <!-- Ejecutar en modo de simulación -->
+
+        <!-- This lauch file just loads the URDF with the given hardware interface and robot name into the ROS Parameter Server -->
+        <arg name="hardware_interface" default="PositionJointInterface"/> 
+        <arg name="robot_name" default="iiwa"/>
+
+        <!-- <include file="$(find iiwa_tool_description)/launch/iiwa7_tool_upload.launch" /> -->
+                
+        <!-- Ejecutar gazebo con sunrise para la simulación -->
+        <include file="$(find iiwa_gazebo)/launch/iiwa_gazebo_with_sunrise.launch" />
+
+        <!-- Ejecutar el nodo iiwa_control_node -->
+        <node name="iiwa_control_node" pkg="iiwa_surgery" type="iiwa_control_node.py" output="screen"/>
+   </group>
+
+
+   <group unless="$(arg simulation_mode)">
+        <!-- Ejecutar en modo real -->
+
+        <!-- Ejecutar el nodo iiwa_control_node -->
+        <node name="iiwa_control_node" pkg="iiwa_surgery" type="iiwa_control_node.py" output="screen"/>
+        
+   </group>
+        
+   
+</launch>
