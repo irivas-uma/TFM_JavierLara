@@ -1,6 +1,0 @@
-simulation_mode: true
-tool_length: 0.0
-tool_orientation: [0.0, 0.0, 0.0]
-fulcrum_point: 0.0
-robot_ip: ""
-work_mode: "free" #"pivot" si está en modo pivotae alrededor del punto de fulcro
