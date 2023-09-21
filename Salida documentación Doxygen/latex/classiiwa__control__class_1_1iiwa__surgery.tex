@@ -1,0 +1,295 @@
+\doxysection{Referencia de la clase iiwa\+\_\+surgery}
+\hypertarget{classiiwa__control__class_1_1iiwa__surgery}{}\label{classiiwa__control__class_1_1iiwa__surgery}\index{iiwa\_surgery@{iiwa\_surgery}}
+
+
+Clase para controlar un robot quirúrgico Kuka en un entorno de ROS.  
+
+
+\doxysubsubsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a4e49b5aedd96a0de8c264e2104bfeca8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_afe8830984c993345b268afcb0167ed63}{simulation\+\_\+mode}}=True)
+\begin{DoxyCompactList}\small\item\em Inicializa una instancia de la clase iiwa\+\_\+surgery. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a7c8ca747538057a0f601994e4d21bdd6}{move\+\_\+cartesian}} (self, pose)
+\begin{DoxyCompactList}\small\item\em Mueve el robot en el espacio cartesiano. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a536c129a3b328325ccdc0958448d00d3}{move\+\_\+cartesian\+\_\+fulcrum}} (self, pose, increment\+\_\+vector, j)
+\begin{DoxyCompactList}\small\item\em Mueve el robot en el espacio cartesiano alrededor de un punto de fulcro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a7e20a82f33d15c4332ab1533b4692b54}{move\+\_\+joint}} (self, joint\+\_\+config)
+\begin{DoxyCompactList}\small\item\em Mueve el robot en el espacio de articulación. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_ab719d9967a0bd8c1b3db43a41c79bac2}{set\+\_\+fulcrum\+\_\+fi}} (self, \mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a381a4ca965170a3fa141b3f726f9cf97}{fulcrum\+\_\+fi}})
+\begin{DoxyCompactList}\small\item\em Configura el punto de fulcro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_ae2b6e1ef4b942703f2e91179f7600d3e}{set\+\_\+robot\+\_\+ip}} (self, \mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a70221305bf8db6392330ef28121efd25}{robot\+\_\+ip}})
+\begin{DoxyCompactList}\small\item\em Configura la dirección IP del robot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a454d6e82ff36fd0b6ddb3fac35a36ad7}{set\+\_\+tool\+\_\+data}} (self, \mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a7ffe27a3ee62905ee1d6420a1c0e6dc1}{tool\+\_\+length}}, \mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a4dfb19dce70ba16b049eb381a299b0b2}{tool\+\_\+orientation}})
+\begin{DoxyCompactList}\small\item\em Configura los datos de la herramienta. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_aee6f087bfb91a81416771a0f8ea29f84}{set\+\_\+work\+\_\+mode}} (self, \mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_af89c8c135334bd0bba79260300b99e14}{work\+\_\+mode}})
+\begin{DoxyCompactList}\small\item\em Configura el modo de trabajo del robot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a3008ec1ec2779aaedde9dcad3d1b1719}{cartesian\+\_\+pub}}
+\begin{DoxyCompactList}\small\item\em Publicador ROS que se utiliza para enviar mensajes de posición cartesiana al robot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a381a4ca965170a3fa141b3f726f9cf97}{fulcrum\+\_\+fi}}
+\begin{DoxyCompactList}\small\item\em Valor que representa la posición del punto de fulcro, un número entre 0 y 1. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a4ab8dd351da659266eecab7fb62809e2}{joint\+\_\+pub}}
+\begin{DoxyCompactList}\small\item\em Publicador ROS que se utiliza para enviar mensajes de posición articular al robot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a0112f5776f4aec66edd0b6a3bb98ef36}{Pf}}
+\begin{DoxyCompactList}\small\item\em Vector que almacena la posición del punto de fulcro en el espacio cartesiano. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_ae8217f3e930d698ea5040be246577e28}{Ptcp}}
+\begin{DoxyCompactList}\small\item\em Vector que almacena la posición del TCP (Tool Center Point) en el espacio cartesiano. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a70221305bf8db6392330ef28121efd25}{robot\+\_\+ip}}
+\begin{DoxyCompactList}\small\item\em Cadena que representa la dirección IP del robot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_afe8830984c993345b268afcb0167ed63}{simulation\+\_\+mode}}
+\begin{DoxyCompactList}\small\item\em Booleano que indica si el sistema está en modo de simulación. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a7ffe27a3ee62905ee1d6420a1c0e6dc1}{tool\+\_\+length}}
+\begin{DoxyCompactList}\small\item\em Valor que representa la longitud de la herramienta. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_a4dfb19dce70ba16b049eb381a299b0b2}{tool\+\_\+orientation}}
+\begin{DoxyCompactList}\small\item\em Lista que almacena la orientación de la herramienta en formato \mbox{[}roll, pitch, yaw\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__class_1_1iiwa__surgery_af89c8c135334bd0bba79260300b99e14}{work\+\_\+mode}}
+\begin{DoxyCompactList}\small\item\em Cadena que indica el modo de trabajo del robot (\textquotesingle{}free\textquotesingle{} o \textquotesingle{}pivot\textquotesingle{}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase para controlar un robot quirúrgico Kuka en un entorno de ROS. 
+
+~\newline
+ Esta clase permite configurar el robot, establecer datos de la herramienta y mover el robot tanto en espacio de articulación como en espacio cartesiano. 
+
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_a4e49b5aedd96a0de8c264e2104bfeca8}\label{classiiwa__control__class_1_1iiwa__surgery_a4e49b5aedd96a0de8c264e2104bfeca8} 
+\index{iiwa\_surgery@{iiwa\_surgery}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{simulation\+\_\+mode = {\ttfamily True} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Inicializa una instancia de la clase iiwa\+\_\+surgery. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em simulation\+\_\+mode} & (bool, opcional)\+: Indica si se está ejecutando en modo simulación. El valor predeterminado es True. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_a7c8ca747538057a0f601994e4d21bdd6}\label{classiiwa__control__class_1_1iiwa__surgery_a7c8ca747538057a0f601994e4d21bdd6} 
+\index{iiwa\_surgery@{iiwa\_surgery}!move\_cartesian@{move\_cartesian}}
+\index{move\_cartesian@{move\_cartesian}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{move\_cartesian()}{move\_cartesian()}}
+{\footnotesize\ttfamily move\+\_\+cartesian (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pose }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Mueve el robot en el espacio cartesiano. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pose} & (geometry\+\_\+msgs.\+msg.\+Pose\+Stamped)\+: Posición y orientación deseada del efector final en espacio cartesiano. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_a536c129a3b328325ccdc0958448d00d3}\label{classiiwa__control__class_1_1iiwa__surgery_a536c129a3b328325ccdc0958448d00d3} 
+\index{iiwa\_surgery@{iiwa\_surgery}!move\_cartesian\_fulcrum@{move\_cartesian\_fulcrum}}
+\index{move\_cartesian\_fulcrum@{move\_cartesian\_fulcrum}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{move\_cartesian\_fulcrum()}{move\_cartesian\_fulcrum()}}
+{\footnotesize\ttfamily move\+\_\+cartesian\+\_\+fulcrum (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pose,  }\item[{}]{increment\+\_\+vector,  }\item[{}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Mueve el robot en el espacio cartesiano alrededor de un punto de fulcro. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pose} & (geometry\+\_\+msgs.\+msg.\+Pose\+Stamped)\+: Posición y orientación deseada del efector final en espacio cartesiano. \\
+\hline
+{\em increment\+\_\+vector} & (list)\+: Vector de incrementos \mbox{[}Ph1, Ph2, Ph3\mbox{]} para mover la herramienta. \\
+\hline
+{\em j} & (int)\+: Indicador de posición, 0 para la posición inicial, 1 para las posiciones sucesivas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_a7e20a82f33d15c4332ab1533b4692b54}\label{classiiwa__control__class_1_1iiwa__surgery_a7e20a82f33d15c4332ab1533b4692b54} 
+\index{iiwa\_surgery@{iiwa\_surgery}!move\_joint@{move\_joint}}
+\index{move\_joint@{move\_joint}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{move\_joint()}{move\_joint()}}
+{\footnotesize\ttfamily move\+\_\+joint (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{joint\+\_\+config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Mueve el robot en el espacio de articulación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em joint\+\_\+config} & (iiwa\+\_\+msgs.\+msg.\+Joint\+Position)\+: Configuración de las articulaciones del robot. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_ab719d9967a0bd8c1b3db43a41c79bac2}\label{classiiwa__control__class_1_1iiwa__surgery_ab719d9967a0bd8c1b3db43a41c79bac2} 
+\index{iiwa\_surgery@{iiwa\_surgery}!set\_fulcrum\_fi@{set\_fulcrum\_fi}}
+\index{set\_fulcrum\_fi@{set\_fulcrum\_fi}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{set\_fulcrum\_fi()}{set\_fulcrum\_fi()}}
+{\footnotesize\ttfamily set\+\_\+fulcrum\+\_\+fi (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fulcrum\+\_\+fi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Configura el punto de fulcro. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em fulcrum\+\_\+fi} & (float)\+: Posición del punto de fulcro, un valor entre 0 y 1. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_ae2b6e1ef4b942703f2e91179f7600d3e}\label{classiiwa__control__class_1_1iiwa__surgery_ae2b6e1ef4b942703f2e91179f7600d3e} 
+\index{iiwa\_surgery@{iiwa\_surgery}!set\_robot\_ip@{set\_robot\_ip}}
+\index{set\_robot\_ip@{set\_robot\_ip}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{set\_robot\_ip()}{set\_robot\_ip()}}
+{\footnotesize\ttfamily set\+\_\+robot\+\_\+ip (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{robot\+\_\+ip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Configura la dirección IP del robot. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em robot\+\_\+ip} & (str)\+: Dirección IP del robot. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_a454d6e82ff36fd0b6ddb3fac35a36ad7}\label{classiiwa__control__class_1_1iiwa__surgery_a454d6e82ff36fd0b6ddb3fac35a36ad7} 
+\index{iiwa\_surgery@{iiwa\_surgery}!set\_tool\_data@{set\_tool\_data}}
+\index{set\_tool\_data@{set\_tool\_data}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{set\_tool\_data()}{set\_tool\_data()}}
+{\footnotesize\ttfamily set\+\_\+tool\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tool\+\_\+length,  }\item[{}]{tool\+\_\+orientation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Configura los datos de la herramienta. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em tool\+\_\+length} & (float)\+: Longitud de la herramienta. \\
+\hline
+{\em tool\+\_\+orientation} & (list)\+: Orientación de la herramienta en formato \mbox{[}roll, pitch, yaw\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_aee6f087bfb91a81416771a0f8ea29f84}\label{classiiwa__control__class_1_1iiwa__surgery_aee6f087bfb91a81416771a0f8ea29f84} 
+\index{iiwa\_surgery@{iiwa\_surgery}!set\_work\_mode@{set\_work\_mode}}
+\index{set\_work\_mode@{set\_work\_mode}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{set\_work\_mode()}{set\_work\_mode()}}
+{\footnotesize\ttfamily set\+\_\+work\+\_\+mode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{work\+\_\+mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Configura el modo de trabajo del robot. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em work\+\_\+mode} & (str)\+: Modo de trabajo del robot (\textquotesingle{}free\textquotesingle{} o \textquotesingle{}pivot\textquotesingle{}). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_a3008ec1ec2779aaedde9dcad3d1b1719}\label{classiiwa__control__class_1_1iiwa__surgery_a3008ec1ec2779aaedde9dcad3d1b1719} 
+\index{iiwa\_surgery@{iiwa\_surgery}!cartesian\_pub@{cartesian\_pub}}
+\index{cartesian\_pub@{cartesian\_pub}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{cartesian\_pub}{cartesian\_pub}}
+{\footnotesize\ttfamily cartesian\+\_\+pub\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Publicador ROS que se utiliza para enviar mensajes de posición cartesiana al robot. 
+
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_a381a4ca965170a3fa141b3f726f9cf97}\label{classiiwa__control__class_1_1iiwa__surgery_a381a4ca965170a3fa141b3f726f9cf97} 
+\index{iiwa\_surgery@{iiwa\_surgery}!fulcrum\_fi@{fulcrum\_fi}}
+\index{fulcrum\_fi@{fulcrum\_fi}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{fulcrum\_fi}{fulcrum\_fi}}
+{\footnotesize\ttfamily fulcrum\+\_\+fi\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Valor que representa la posición del punto de fulcro, un número entre 0 y 1. 
+
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_a4ab8dd351da659266eecab7fb62809e2}\label{classiiwa__control__class_1_1iiwa__surgery_a4ab8dd351da659266eecab7fb62809e2} 
+\index{iiwa\_surgery@{iiwa\_surgery}!joint\_pub@{joint\_pub}}
+\index{joint\_pub@{joint\_pub}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{joint\_pub}{joint\_pub}}
+{\footnotesize\ttfamily joint\+\_\+pub\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Publicador ROS que se utiliza para enviar mensajes de posición articular al robot. 
+
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_a0112f5776f4aec66edd0b6a3bb98ef36}\label{classiiwa__control__class_1_1iiwa__surgery_a0112f5776f4aec66edd0b6a3bb98ef36} 
+\index{iiwa\_surgery@{iiwa\_surgery}!Pf@{Pf}}
+\index{Pf@{Pf}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{Pf}{Pf}}
+{\footnotesize\ttfamily Pf\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Vector que almacena la posición del punto de fulcro en el espacio cartesiano. 
+
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_ae8217f3e930d698ea5040be246577e28}\label{classiiwa__control__class_1_1iiwa__surgery_ae8217f3e930d698ea5040be246577e28} 
+\index{iiwa\_surgery@{iiwa\_surgery}!Ptcp@{Ptcp}}
+\index{Ptcp@{Ptcp}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{Ptcp}{Ptcp}}
+{\footnotesize\ttfamily Ptcp\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Vector que almacena la posición del TCP (Tool Center Point) en el espacio cartesiano. 
+
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_a70221305bf8db6392330ef28121efd25}\label{classiiwa__control__class_1_1iiwa__surgery_a70221305bf8db6392330ef28121efd25} 
+\index{iiwa\_surgery@{iiwa\_surgery}!robot\_ip@{robot\_ip}}
+\index{robot\_ip@{robot\_ip}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{robot\_ip}{robot\_ip}}
+{\footnotesize\ttfamily robot\+\_\+ip\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Cadena que representa la dirección IP del robot. 
+
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_afe8830984c993345b268afcb0167ed63}\label{classiiwa__control__class_1_1iiwa__surgery_afe8830984c993345b268afcb0167ed63} 
+\index{iiwa\_surgery@{iiwa\_surgery}!simulation\_mode@{simulation\_mode}}
+\index{simulation\_mode@{simulation\_mode}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{simulation\_mode}{simulation\_mode}}
+{\footnotesize\ttfamily simulation\+\_\+mode\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Booleano que indica si el sistema está en modo de simulación. 
+
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_a7ffe27a3ee62905ee1d6420a1c0e6dc1}\label{classiiwa__control__class_1_1iiwa__surgery_a7ffe27a3ee62905ee1d6420a1c0e6dc1} 
+\index{iiwa\_surgery@{iiwa\_surgery}!tool\_length@{tool\_length}}
+\index{tool\_length@{tool\_length}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{tool\_length}{tool\_length}}
+{\footnotesize\ttfamily tool\+\_\+length\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Valor que representa la longitud de la herramienta. 
+
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_a4dfb19dce70ba16b049eb381a299b0b2}\label{classiiwa__control__class_1_1iiwa__surgery_a4dfb19dce70ba16b049eb381a299b0b2} 
+\index{iiwa\_surgery@{iiwa\_surgery}!tool\_orientation@{tool\_orientation}}
+\index{tool\_orientation@{tool\_orientation}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{tool\_orientation}{tool\_orientation}}
+{\footnotesize\ttfamily tool\+\_\+orientation\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Lista que almacena la orientación de la herramienta en formato \mbox{[}roll, pitch, yaw\mbox{]}. 
+
+\Hypertarget{classiiwa__control__class_1_1iiwa__surgery_af89c8c135334bd0bba79260300b99e14}\label{classiiwa__control__class_1_1iiwa__surgery_af89c8c135334bd0bba79260300b99e14} 
+\index{iiwa\_surgery@{iiwa\_surgery}!work\_mode@{work\_mode}}
+\index{work\_mode@{work\_mode}!iiwa\_surgery@{iiwa\_surgery}}
+\doxysubsubsection{\texorpdfstring{work\_mode}{work\_mode}}
+{\footnotesize\ttfamily work\+\_\+mode\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Cadena que indica el modo de trabajo del robot (\textquotesingle{}free\textquotesingle{} o \textquotesingle{}pivot\textquotesingle{}). 
+
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Javier/\+Desktop/\+TFM/\+Repositorio/\+Archivos comentados para Doxygen/\mbox{\hyperlink{iiwa__control__class_8py}{iiwa\+\_\+control\+\_\+class.\+py}}\end{DoxyCompactItemize}
