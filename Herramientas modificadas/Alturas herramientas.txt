@@ -1,0 +1,2 @@
+Altura de la herramienta tool1: 0.218 m
+Altura de la herramienta tool2: 0.14 m
