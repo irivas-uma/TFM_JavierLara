@@ -1,0 +1,17 @@
+# Establece el modo de simulación. 'true' para el modo de simulación y 'false' para el modo real.
+simulation_mode: true 
+
+# Define la longitud de la herramienta respecto del efector final (EF).
+tool_length: 0.1275
+
+# Especifica la orientación de la herramienta en radianes con formato [roll, pitch, yaw].
+tool_orientation: [0.0, 0.0, 0.0] 
+
+# Indica en qué punto de la longitud de la herramienta se encuentra el punto de fulcro. Debe estar entre 0 y 1, donde 0 representa el extremo final (EF) y 1 el Tool Center Point (TCP).
+fulcrum_fi: 0.5 
+
+# Define la dirección IP del robot. Ejemplo: "192.168.1.100".
+robot_ip: "" 
+
+# Establece el modo de trabajo del robot: "pivot" si está en modo pivotaje alrededor del punto de fulcro y "free" para el modo de funcionamiento libre.
+work_mode: "pivot" 
