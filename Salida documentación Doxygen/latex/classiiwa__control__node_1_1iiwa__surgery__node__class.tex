@@ -1,0 +1,331 @@
+\doxysection{Referencia de la clase iiwa\+\_\+surgery\+\_\+node\+\_\+class}
+\hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class}{}\label{classiiwa__control__node_1_1iiwa__surgery__node__class}\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+
+
+Clase que define el nodo ROS para el control del robot KUKA LBR iiwa con fines quirúrgicos.  
+
+
+\doxysubsubsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_abdd362d5f799ad16b5d6700efe590290}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_aa74225bbd3062152901c9b6126b6c87d}{cartesian\+\_\+pose\+\_\+callback}} (self, msg)
+\begin{DoxyCompactList}\small\item\em Callback para recibir estados de posición cartesiana y posteriormente publicarlos en el topic iiwa\+\_\+surgery/output/ef\+\_\+pose y tras trasnformación en iiwa\+\_\+surgery/output/tcp\+\_\+pose. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a9531c53871cf72f99fb3f6229b5b8120}{joint\+\_\+command\+\_\+callback}} (self, msg)
+\begin{DoxyCompactList}\small\item\em Callback para recibir comandos de posición articular y posteriormente enviarlos al método move\+\_\+joint de la clase iiwa\+\_\+surgery. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a34e17c79e89ebdf3be3dc019448402f4}{joint\+\_\+position\+\_\+callback}} (self, msg)
+\begin{DoxyCompactList}\small\item\em Callback para recibir estados de posición articular y posteriormente publicarlos en el topic iiwa\+\_\+surgery/output/joints. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a5d4b6a5a6337619f659ea0756369462a}{joint\+\_\+state\+\_\+callback}} (self, msg)
+\begin{DoxyCompactList}\small\item\em Callback para recibir estados de posición articular y posteriormente publicarlos en el topic iiwa\+\_\+surgery/output/joints. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_ad766fc370c2dbf2034c7d97ef4a6f2b9}{pose\+\_\+command\+\_\+callback}} (self, msg)
+\begin{DoxyCompactList}\small\item\em Callback para recibir comandos de posición cartesiana y posteriormente enviarlos a los métodos move\+\_\+cartesian o move\+\_\+cartesian\+\_\+fulcrum de la clase iiwa\+\_\+surgey dependiendo si el movimiento es libre o de pivoteo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a08060e0924949738f75a0cdd8b49cef4}{run}} (self)
+\begin{DoxyCompactList}\small\item\em Ejecuta el bucle principal mientras el nodo está en funcionamiento. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a779ec529b434395e4c5036b564352440}{cartesian\+\_\+pose\+\_\+sub}}
+\begin{DoxyCompactList}\small\item\em Suscriptor ROS utilizado para recibir estados de posición cartesiana. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a97b8810774b4f6947cb1b7ed05428998}{ef\+\_\+pose\+\_\+pub}}
+\begin{DoxyCompactList}\small\item\em Publicador ROS utilizado para enviar estados de posición final del efector (EF) del robot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_af5593ea1754ac4cbbee2030e3e455b06}{first\+\_\+position}}
+\begin{DoxyCompactList}\small\item\em Variable que se utiliza para almacenar la primera posición recibida en el callback pose\+\_\+command\+\_\+callback. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a381a4ca965170a3fa141b3f726f9cf97}{fulcrum\+\_\+fi}}
+\begin{DoxyCompactList}\small\item\em Valor que indica en que punto de la longitud de la herramienta se encuentra el punto de fulcro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a310b36190c861bdba5e456a2b6c569b1}{iiwa}}
+\begin{DoxyCompactList}\small\item\em Es una instancia de la clase iiwa\+\_\+surgery que se utiliza para controlar el robot iiwa. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a44bafdbc77384bd65016c99b02e1df2a}{joint\+\_\+position\+\_\+sub}}
+\begin{DoxyCompactList}\small\item\em Suscriptor ROS utilizado para recibir estados de posición articular. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a4ab8dd351da659266eecab7fb62809e2}{joint\+\_\+pub}}
+\begin{DoxyCompactList}\small\item\em Publicador ROS utilizado para enviar mensajes de posición articular. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_aea88ed09b81d0631b685f5163ec60ed5}{joint\+\_\+state\+\_\+sub}}
+\begin{DoxyCompactList}\small\item\em Suscriptor ROS utilizado para recibir estados de posición articular. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a3483e115054a50cd58d11671bdcd00bc}{joint\+\_\+sub}}
+\begin{DoxyCompactList}\small\item\em Suscriptor ROS utilizado para recibir comandos de posición articular. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a9892c05d87b83db50415f12c0c6e494b}{pose\+\_\+sub}}
+\begin{DoxyCompactList}\small\item\em Suscriptor ROS utilizado para recibir comandos de posición cartesiana. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a70221305bf8db6392330ef28121efd25}{robot\+\_\+ip}}
+\begin{DoxyCompactList}\small\item\em Almacena la dirección IP del robot iiwa. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_afe8830984c993345b268afcb0167ed63}{simulation\+\_\+mode}}
+\begin{DoxyCompactList}\small\item\em Indica si el robot está en modo de simulación o no, siendo True para simulación y False para el robot real. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_af97d684a9f599050036205b279b3ab67}{tcp\+\_\+pose\+\_\+pub}}
+\begin{DoxyCompactList}\small\item\em Publicador ROS utilizado para enviar estados de posición del Tool Center Point (TCP). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a7ffe27a3ee62905ee1d6420a1c0e6dc1}{tool\+\_\+length}}
+\begin{DoxyCompactList}\small\item\em Almacena la longitud de la herramienta utilizada en el robot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_a4dfb19dce70ba16b049eb381a299b0b2}{tool\+\_\+orientation}}
+\begin{DoxyCompactList}\small\item\em Lista que almacena la orientación de la herramienta en radianes con el en formato \mbox{[}roll, pitch, yaw\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classiiwa__control__node_1_1iiwa__surgery__node__class_af89c8c135334bd0bba79260300b99e14}{work\+\_\+mode}}
+\begin{DoxyCompactList}\small\item\em Indica el modo de trabajo predeterminado del robot ("{}free"{} para movimiento libre y "{}pivot"{} para movimiento alrededor de punto de fulcro). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que define el nodo ROS para el control del robot KUKA LBR iiwa con fines quirúrgicos. 
+
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_abdd362d5f799ad16b5d6700efe590290}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_abdd362d5f799ad16b5d6700efe590290} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Constructor de la clase. 
+
+
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_aa74225bbd3062152901c9b6126b6c87d}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_aa74225bbd3062152901c9b6126b6c87d} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!cartesian\_pose\_callback@{cartesian\_pose\_callback}}
+\index{cartesian\_pose\_callback@{cartesian\_pose\_callback}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{cartesian\_pose\_callback()}{cartesian\_pose\_callback()}}
+{\footnotesize\ttfamily cartesian\+\_\+pose\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Callback para recibir estados de posición cartesiana y posteriormente publicarlos en el topic iiwa\+\_\+surgery/output/ef\+\_\+pose y tras trasnformación en iiwa\+\_\+surgery/output/tcp\+\_\+pose. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em msg} & Mensaje de estado de posición cartesiana (Pose\+Stamped). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a9531c53871cf72f99fb3f6229b5b8120}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a9531c53871cf72f99fb3f6229b5b8120} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!joint\_command\_callback@{joint\_command\_callback}}
+\index{joint\_command\_callback@{joint\_command\_callback}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{joint\_command\_callback()}{joint\_command\_callback()}}
+{\footnotesize\ttfamily joint\+\_\+command\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Callback para recibir comandos de posición articular y posteriormente enviarlos al método move\+\_\+joint de la clase iiwa\+\_\+surgery. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em msg} & Mensaje de posición articular (Joint\+Position). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a34e17c79e89ebdf3be3dc019448402f4}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a34e17c79e89ebdf3be3dc019448402f4} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!joint\_position\_callback@{joint\_position\_callback}}
+\index{joint\_position\_callback@{joint\_position\_callback}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{joint\_position\_callback()}{joint\_position\_callback()}}
+{\footnotesize\ttfamily joint\+\_\+position\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Callback para recibir estados de posición articular y posteriormente publicarlos en el topic iiwa\+\_\+surgery/output/joints. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em msg} & Mensaje de estado de posición articular (Joint\+Position). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a5d4b6a5a6337619f659ea0756369462a}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a5d4b6a5a6337619f659ea0756369462a} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!joint\_state\_callback@{joint\_state\_callback}}
+\index{joint\_state\_callback@{joint\_state\_callback}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{joint\_state\_callback()}{joint\_state\_callback()}}
+{\footnotesize\ttfamily joint\+\_\+state\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Callback para recibir estados de posición articular y posteriormente publicarlos en el topic iiwa\+\_\+surgery/output/joints. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em msg} & Mensaje de estado de posición articular (Joint\+State). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_ad766fc370c2dbf2034c7d97ef4a6f2b9}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_ad766fc370c2dbf2034c7d97ef4a6f2b9} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!pose\_command\_callback@{pose\_command\_callback}}
+\index{pose\_command\_callback@{pose\_command\_callback}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{pose\_command\_callback()}{pose\_command\_callback()}}
+{\footnotesize\ttfamily pose\+\_\+command\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Callback para recibir comandos de posición cartesiana y posteriormente enviarlos a los métodos move\+\_\+cartesian o move\+\_\+cartesian\+\_\+fulcrum de la clase iiwa\+\_\+surgey dependiendo si el movimiento es libre o de pivoteo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em msg} & Mensaje de posición cartesiana (Pose\+Stamped). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a08060e0924949738f75a0cdd8b49cef4}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a08060e0924949738f75a0cdd8b49cef4} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!run@{run}}
+\index{run@{run}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ejecuta el bucle principal mientras el nodo está en funcionamiento. 
+
+
+
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a779ec529b434395e4c5036b564352440}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a779ec529b434395e4c5036b564352440} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!cartesian\_pose\_sub@{cartesian\_pose\_sub}}
+\index{cartesian\_pose\_sub@{cartesian\_pose\_sub}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{cartesian\_pose\_sub}{cartesian\_pose\_sub}}
+{\footnotesize\ttfamily cartesian\+\_\+pose\+\_\+sub\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Suscriptor ROS utilizado para recibir estados de posición cartesiana. 
+
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a97b8810774b4f6947cb1b7ed05428998}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a97b8810774b4f6947cb1b7ed05428998} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!ef\_pose\_pub@{ef\_pose\_pub}}
+\index{ef\_pose\_pub@{ef\_pose\_pub}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{ef\_pose\_pub}{ef\_pose\_pub}}
+{\footnotesize\ttfamily ef\+\_\+pose\+\_\+pub\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Publicador ROS utilizado para enviar estados de posición final del efector (EF) del robot. 
+
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_af5593ea1754ac4cbbee2030e3e455b06}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_af5593ea1754ac4cbbee2030e3e455b06} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!first\_position@{first\_position}}
+\index{first\_position@{first\_position}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{first\_position}{first\_position}}
+{\footnotesize\ttfamily first\+\_\+position\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Variable que se utiliza para almacenar la primera posición recibida en el callback pose\+\_\+command\+\_\+callback. 
+
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a381a4ca965170a3fa141b3f726f9cf97}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a381a4ca965170a3fa141b3f726f9cf97} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!fulcrum\_fi@{fulcrum\_fi}}
+\index{fulcrum\_fi@{fulcrum\_fi}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{fulcrum\_fi}{fulcrum\_fi}}
+{\footnotesize\ttfamily fulcrum\+\_\+fi\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Valor que indica en que punto de la longitud de la herramienta se encuentra el punto de fulcro. 
+
+Debe estar entre 0 y 1, siendo 0 el EF y el 1 el TCP. \Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a310b36190c861bdba5e456a2b6c569b1}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a310b36190c861bdba5e456a2b6c569b1} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!iiwa@{iiwa}}
+\index{iiwa@{iiwa}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{iiwa}{iiwa}}
+{\footnotesize\ttfamily iiwa\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Es una instancia de la clase iiwa\+\_\+surgery que se utiliza para controlar el robot iiwa. 
+
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a44bafdbc77384bd65016c99b02e1df2a}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a44bafdbc77384bd65016c99b02e1df2a} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!joint\_position\_sub@{joint\_position\_sub}}
+\index{joint\_position\_sub@{joint\_position\_sub}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{joint\_position\_sub}{joint\_position\_sub}}
+{\footnotesize\ttfamily joint\+\_\+position\+\_\+sub\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Suscriptor ROS utilizado para recibir estados de posición articular. 
+
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a4ab8dd351da659266eecab7fb62809e2}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a4ab8dd351da659266eecab7fb62809e2} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!joint\_pub@{joint\_pub}}
+\index{joint\_pub@{joint\_pub}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{joint\_pub}{joint\_pub}}
+{\footnotesize\ttfamily joint\+\_\+pub\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Publicador ROS utilizado para enviar mensajes de posición articular. 
+
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_aea88ed09b81d0631b685f5163ec60ed5}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_aea88ed09b81d0631b685f5163ec60ed5} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!joint\_state\_sub@{joint\_state\_sub}}
+\index{joint\_state\_sub@{joint\_state\_sub}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{joint\_state\_sub}{joint\_state\_sub}}
+{\footnotesize\ttfamily joint\+\_\+state\+\_\+sub\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Suscriptor ROS utilizado para recibir estados de posición articular. 
+
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a3483e115054a50cd58d11671bdcd00bc}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a3483e115054a50cd58d11671bdcd00bc} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!joint\_sub@{joint\_sub}}
+\index{joint\_sub@{joint\_sub}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{joint\_sub}{joint\_sub}}
+{\footnotesize\ttfamily joint\+\_\+sub\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Suscriptor ROS utilizado para recibir comandos de posición articular. 
+
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a9892c05d87b83db50415f12c0c6e494b}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a9892c05d87b83db50415f12c0c6e494b} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!pose\_sub@{pose\_sub}}
+\index{pose\_sub@{pose\_sub}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{pose\_sub}{pose\_sub}}
+{\footnotesize\ttfamily pose\+\_\+sub\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Suscriptor ROS utilizado para recibir comandos de posición cartesiana. 
+
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a70221305bf8db6392330ef28121efd25}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a70221305bf8db6392330ef28121efd25} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!robot\_ip@{robot\_ip}}
+\index{robot\_ip@{robot\_ip}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{robot\_ip}{robot\_ip}}
+{\footnotesize\ttfamily robot\+\_\+ip\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Almacena la dirección IP del robot iiwa. 
+
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_afe8830984c993345b268afcb0167ed63}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_afe8830984c993345b268afcb0167ed63} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!simulation\_mode@{simulation\_mode}}
+\index{simulation\_mode@{simulation\_mode}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{simulation\_mode}{simulation\_mode}}
+{\footnotesize\ttfamily simulation\+\_\+mode\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Indica si el robot está en modo de simulación o no, siendo True para simulación y False para el robot real. 
+
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_af97d684a9f599050036205b279b3ab67}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_af97d684a9f599050036205b279b3ab67} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!tcp\_pose\_pub@{tcp\_pose\_pub}}
+\index{tcp\_pose\_pub@{tcp\_pose\_pub}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{tcp\_pose\_pub}{tcp\_pose\_pub}}
+{\footnotesize\ttfamily tcp\+\_\+pose\+\_\+pub\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Publicador ROS utilizado para enviar estados de posición del Tool Center Point (TCP). 
+
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a7ffe27a3ee62905ee1d6420a1c0e6dc1}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a7ffe27a3ee62905ee1d6420a1c0e6dc1} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!tool\_length@{tool\_length}}
+\index{tool\_length@{tool\_length}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{tool\_length}{tool\_length}}
+{\footnotesize\ttfamily tool\+\_\+length\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Almacena la longitud de la herramienta utilizada en el robot. 
+
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_a4dfb19dce70ba16b049eb381a299b0b2}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_a4dfb19dce70ba16b049eb381a299b0b2} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!tool\_orientation@{tool\_orientation}}
+\index{tool\_orientation@{tool\_orientation}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{tool\_orientation}{tool\_orientation}}
+{\footnotesize\ttfamily tool\+\_\+orientation\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Lista que almacena la orientación de la herramienta en radianes con el en formato \mbox{[}roll, pitch, yaw\mbox{]}. 
+
+\Hypertarget{classiiwa__control__node_1_1iiwa__surgery__node__class_af89c8c135334bd0bba79260300b99e14}\label{classiiwa__control__node_1_1iiwa__surgery__node__class_af89c8c135334bd0bba79260300b99e14} 
+\index{iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}!work\_mode@{work\_mode}}
+\index{work\_mode@{work\_mode}!iiwa\_surgery\_node\_class@{iiwa\_surgery\_node\_class}}
+\doxysubsubsection{\texorpdfstring{work\_mode}{work\_mode}}
+{\footnotesize\ttfamily work\+\_\+mode\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Indica el modo de trabajo predeterminado del robot ("{}free"{} para movimiento libre y "{}pivot"{} para movimiento alrededor de punto de fulcro). 
+
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Javier/\+Desktop/\+TFM/\+Repositorio/\+Archivos comentados para Doxygen/\mbox{\hyperlink{iiwa__control__node_8py}{iiwa\+\_\+control\+\_\+node.\+py}}\end{DoxyCompactItemize}
