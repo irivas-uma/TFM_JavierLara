@@ -1,0 +1,837 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Interfaz multimodal para KUKA LBR iiwa 7 R800: Referencia de la clase iiwa_surgery_node_class</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Interfaz multimodal para KUKA LBR iiwa 7 R800
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceiiwa__control__node.html">iiwa_control_node</a></li><li class="navelem"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html">iiwa_surgery_node_class</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pro-methods">Métodos protegidos</a> &#124;
+<a href="#pro-attribs">Atributos protegidos</a> &#124;
+<a href="classiiwa__control__node_1_1iiwa__surgery__node__class-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle"><div class="title">Referencia de la clase iiwa_surgery_node_class</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase que define el nodo ROS para el control del robot KUKA LBR iiwa con fines quirúrgicos.  
+ <a href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#details">Más...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Métodos protegidos</h2></td></tr>
+<tr class="memitem:abdd362d5f799ad16b5d6700efe590290" id="r_abdd362d5f799ad16b5d6700efe590290"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#abdd362d5f799ad16b5d6700efe590290">__init__</a> (self)</td></tr>
+<tr class="memdesc:abdd362d5f799ad16b5d6700efe590290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de la clase.  <br /></td></tr>
+<tr class="separator:abdd362d5f799ad16b5d6700efe590290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74225bbd3062152901c9b6126b6c87d" id="r_aa74225bbd3062152901c9b6126b6c87d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#aa74225bbd3062152901c9b6126b6c87d">cartesian_pose_callback</a> (self, msg)</td></tr>
+<tr class="memdesc:aa74225bbd3062152901c9b6126b6c87d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback para recibir estados de posición cartesiana y posteriormente publicarlos en el topic iiwa_surgery/output/ef_pose y tras trasnformación en iiwa_surgery/output/tcp_pose.  <br /></td></tr>
+<tr class="separator:aa74225bbd3062152901c9b6126b6c87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9531c53871cf72f99fb3f6229b5b8120" id="r_a9531c53871cf72f99fb3f6229b5b8120"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a9531c53871cf72f99fb3f6229b5b8120">joint_command_callback</a> (self, msg)</td></tr>
+<tr class="memdesc:a9531c53871cf72f99fb3f6229b5b8120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback para recibir comandos de posición articular y posteriormente enviarlos al método move_joint de la clase iiwa_surgery.  <br /></td></tr>
+<tr class="separator:a9531c53871cf72f99fb3f6229b5b8120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e17c79e89ebdf3be3dc019448402f4" id="r_a34e17c79e89ebdf3be3dc019448402f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a34e17c79e89ebdf3be3dc019448402f4">joint_position_callback</a> (self, msg)</td></tr>
+<tr class="memdesc:a34e17c79e89ebdf3be3dc019448402f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback para recibir estados de posición articular y posteriormente publicarlos en el topic iiwa_surgery/output/joints.  <br /></td></tr>
+<tr class="separator:a34e17c79e89ebdf3be3dc019448402f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d4b6a5a6337619f659ea0756369462a" id="r_a5d4b6a5a6337619f659ea0756369462a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a5d4b6a5a6337619f659ea0756369462a">joint_state_callback</a> (self, msg)</td></tr>
+<tr class="memdesc:a5d4b6a5a6337619f659ea0756369462a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback para recibir estados de posición articular y posteriormente publicarlos en el topic iiwa_surgery/output/joints.  <br /></td></tr>
+<tr class="separator:a5d4b6a5a6337619f659ea0756369462a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad766fc370c2dbf2034c7d97ef4a6f2b9" id="r_ad766fc370c2dbf2034c7d97ef4a6f2b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#ad766fc370c2dbf2034c7d97ef4a6f2b9">pose_command_callback</a> (self, msg)</td></tr>
+<tr class="memdesc:ad766fc370c2dbf2034c7d97ef4a6f2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback para recibir comandos de posición cartesiana y posteriormente enviarlos a los métodos move_cartesian o move_cartesian_fulcrum de la clase iiwa_surgey dependiendo si el movimiento es libre o de pivoteo.  <br /></td></tr>
+<tr class="separator:ad766fc370c2dbf2034c7d97ef4a6f2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08060e0924949738f75a0cdd8b49cef4" id="r_a08060e0924949738f75a0cdd8b49cef4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a08060e0924949738f75a0cdd8b49cef4">run</a> (self)</td></tr>
+<tr class="memdesc:a08060e0924949738f75a0cdd8b49cef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ejecuta el bucle principal mientras el nodo está en funcionamiento.  <br /></td></tr>
+<tr class="separator:a08060e0924949738f75a0cdd8b49cef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Atributos protegidos</h2></td></tr>
+<tr class="memitem:a779ec529b434395e4c5036b564352440" id="r_a779ec529b434395e4c5036b564352440"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a779ec529b434395e4c5036b564352440">cartesian_pose_sub</a></td></tr>
+<tr class="memdesc:a779ec529b434395e4c5036b564352440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suscriptor ROS utilizado para recibir estados de posición cartesiana.  <br /></td></tr>
+<tr class="separator:a779ec529b434395e4c5036b564352440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b8810774b4f6947cb1b7ed05428998" id="r_a97b8810774b4f6947cb1b7ed05428998"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a97b8810774b4f6947cb1b7ed05428998">ef_pose_pub</a></td></tr>
+<tr class="memdesc:a97b8810774b4f6947cb1b7ed05428998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publicador ROS utilizado para enviar estados de posición final del efector (EF) del robot.  <br /></td></tr>
+<tr class="separator:a97b8810774b4f6947cb1b7ed05428998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5593ea1754ac4cbbee2030e3e455b06" id="r_af5593ea1754ac4cbbee2030e3e455b06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#af5593ea1754ac4cbbee2030e3e455b06">first_position</a></td></tr>
+<tr class="memdesc:af5593ea1754ac4cbbee2030e3e455b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable que se utiliza para almacenar la primera posición recibida en el callback pose_command_callback.  <br /></td></tr>
+<tr class="separator:af5593ea1754ac4cbbee2030e3e455b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381a4ca965170a3fa141b3f726f9cf97" id="r_a381a4ca965170a3fa141b3f726f9cf97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a381a4ca965170a3fa141b3f726f9cf97">fulcrum_fi</a></td></tr>
+<tr class="memdesc:a381a4ca965170a3fa141b3f726f9cf97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valor que indica en que punto de la longitud de la herramienta se encuentra el punto de fulcro.  <br /></td></tr>
+<tr class="separator:a381a4ca965170a3fa141b3f726f9cf97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310b36190c861bdba5e456a2b6c569b1" id="r_a310b36190c861bdba5e456a2b6c569b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a310b36190c861bdba5e456a2b6c569b1">iiwa</a></td></tr>
+<tr class="memdesc:a310b36190c861bdba5e456a2b6c569b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Es una instancia de la clase iiwa_surgery que se utiliza para controlar el robot iiwa.  <br /></td></tr>
+<tr class="separator:a310b36190c861bdba5e456a2b6c569b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44bafdbc77384bd65016c99b02e1df2a" id="r_a44bafdbc77384bd65016c99b02e1df2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a44bafdbc77384bd65016c99b02e1df2a">joint_position_sub</a></td></tr>
+<tr class="memdesc:a44bafdbc77384bd65016c99b02e1df2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suscriptor ROS utilizado para recibir estados de posición articular.  <br /></td></tr>
+<tr class="separator:a44bafdbc77384bd65016c99b02e1df2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab8dd351da659266eecab7fb62809e2" id="r_a4ab8dd351da659266eecab7fb62809e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a4ab8dd351da659266eecab7fb62809e2">joint_pub</a></td></tr>
+<tr class="memdesc:a4ab8dd351da659266eecab7fb62809e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publicador ROS utilizado para enviar mensajes de posición articular.  <br /></td></tr>
+<tr class="separator:a4ab8dd351da659266eecab7fb62809e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea88ed09b81d0631b685f5163ec60ed5" id="r_aea88ed09b81d0631b685f5163ec60ed5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#aea88ed09b81d0631b685f5163ec60ed5">joint_state_sub</a></td></tr>
+<tr class="memdesc:aea88ed09b81d0631b685f5163ec60ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suscriptor ROS utilizado para recibir estados de posición articular.  <br /></td></tr>
+<tr class="separator:aea88ed09b81d0631b685f5163ec60ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3483e115054a50cd58d11671bdcd00bc" id="r_a3483e115054a50cd58d11671bdcd00bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a3483e115054a50cd58d11671bdcd00bc">joint_sub</a></td></tr>
+<tr class="memdesc:a3483e115054a50cd58d11671bdcd00bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suscriptor ROS utilizado para recibir comandos de posición articular.  <br /></td></tr>
+<tr class="separator:a3483e115054a50cd58d11671bdcd00bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9892c05d87b83db50415f12c0c6e494b" id="r_a9892c05d87b83db50415f12c0c6e494b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a9892c05d87b83db50415f12c0c6e494b">pose_sub</a></td></tr>
+<tr class="memdesc:a9892c05d87b83db50415f12c0c6e494b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suscriptor ROS utilizado para recibir comandos de posición cartesiana.  <br /></td></tr>
+<tr class="separator:a9892c05d87b83db50415f12c0c6e494b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70221305bf8db6392330ef28121efd25" id="r_a70221305bf8db6392330ef28121efd25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a70221305bf8db6392330ef28121efd25">robot_ip</a></td></tr>
+<tr class="memdesc:a70221305bf8db6392330ef28121efd25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena la dirección IP del robot iiwa.  <br /></td></tr>
+<tr class="separator:a70221305bf8db6392330ef28121efd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8830984c993345b268afcb0167ed63" id="r_afe8830984c993345b268afcb0167ed63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#afe8830984c993345b268afcb0167ed63">simulation_mode</a></td></tr>
+<tr class="memdesc:afe8830984c993345b268afcb0167ed63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el robot está en modo de simulación o no, siendo True para simulación y False para el robot real.  <br /></td></tr>
+<tr class="separator:afe8830984c993345b268afcb0167ed63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97d684a9f599050036205b279b3ab67" id="r_af97d684a9f599050036205b279b3ab67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#af97d684a9f599050036205b279b3ab67">tcp_pose_pub</a></td></tr>
+<tr class="memdesc:af97d684a9f599050036205b279b3ab67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publicador ROS utilizado para enviar estados de posición del Tool Center Point (TCP).  <br /></td></tr>
+<tr class="separator:af97d684a9f599050036205b279b3ab67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ffe27a3ee62905ee1d6420a1c0e6dc1" id="r_a7ffe27a3ee62905ee1d6420a1c0e6dc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a7ffe27a3ee62905ee1d6420a1c0e6dc1">tool_length</a></td></tr>
+<tr class="memdesc:a7ffe27a3ee62905ee1d6420a1c0e6dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena la longitud de la herramienta utilizada en el robot.  <br /></td></tr>
+<tr class="separator:a7ffe27a3ee62905ee1d6420a1c0e6dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dfb19dce70ba16b049eb381a299b0b2" id="r_a4dfb19dce70ba16b049eb381a299b0b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#a4dfb19dce70ba16b049eb381a299b0b2">tool_orientation</a></td></tr>
+<tr class="memdesc:a4dfb19dce70ba16b049eb381a299b0b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista que almacena la orientación de la herramienta en radianes con el en formato [roll, pitch, yaw].  <br /></td></tr>
+<tr class="separator:a4dfb19dce70ba16b049eb381a299b0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89c8c135334bd0bba79260300b99e14" id="r_af89c8c135334bd0bba79260300b99e14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiiwa__control__node_1_1iiwa__surgery__node__class.html#af89c8c135334bd0bba79260300b99e14">work_mode</a></td></tr>
+<tr class="memdesc:af89c8c135334bd0bba79260300b99e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica el modo de trabajo predeterminado del robot ("free" para movimiento libre y "pivot" para movimiento alrededor de punto de fulcro).  <br /></td></tr>
+<tr class="separator:af89c8c135334bd0bba79260300b99e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Clase que define el nodo ROS para el control del robot KUKA LBR iiwa con fines quirúrgicos. </p>
+</div><h2 class="groupheader">Documentación de constructores y destructores</h2>
+<a id="abdd362d5f799ad16b5d6700efe590290" name="abdd362d5f799ad16b5d6700efe590290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd362d5f799ad16b5d6700efe590290">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor de la clase. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones miembro</h2>
+<a id="aa74225bbd3062152901c9b6126b6c87d" name="aa74225bbd3062152901c9b6126b6c87d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74225bbd3062152901c9b6126b6c87d">&#9670;&#160;</a></span>cartesian_pose_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cartesian_pose_callback </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback para recibir estados de posición cartesiana y posteriormente publicarlos en el topic iiwa_surgery/output/ef_pose y tras trasnformación en iiwa_surgery/output/tcp_pose. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>Mensaje de estado de posición cartesiana (PoseStamped). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9531c53871cf72f99fb3f6229b5b8120" name="a9531c53871cf72f99fb3f6229b5b8120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9531c53871cf72f99fb3f6229b5b8120">&#9670;&#160;</a></span>joint_command_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">joint_command_callback </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback para recibir comandos de posición articular y posteriormente enviarlos al método move_joint de la clase iiwa_surgery. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>Mensaje de posición articular (JointPosition). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a34e17c79e89ebdf3be3dc019448402f4" name="a34e17c79e89ebdf3be3dc019448402f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34e17c79e89ebdf3be3dc019448402f4">&#9670;&#160;</a></span>joint_position_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">joint_position_callback </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback para recibir estados de posición articular y posteriormente publicarlos en el topic iiwa_surgery/output/joints. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>Mensaje de estado de posición articular (JointPosition). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5d4b6a5a6337619f659ea0756369462a" name="a5d4b6a5a6337619f659ea0756369462a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d4b6a5a6337619f659ea0756369462a">&#9670;&#160;</a></span>joint_state_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">joint_state_callback </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback para recibir estados de posición articular y posteriormente publicarlos en el topic iiwa_surgery/output/joints. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>Mensaje de estado de posición articular (JointState). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad766fc370c2dbf2034c7d97ef4a6f2b9" name="ad766fc370c2dbf2034c7d97ef4a6f2b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad766fc370c2dbf2034c7d97ef4a6f2b9">&#9670;&#160;</a></span>pose_command_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pose_command_callback </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback para recibir comandos de posición cartesiana y posteriormente enviarlos a los métodos move_cartesian o move_cartesian_fulcrum de la clase iiwa_surgey dependiendo si el movimiento es libre o de pivoteo. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>Mensaje de posición cartesiana (PoseStamped). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a08060e0924949738f75a0cdd8b49cef4" name="a08060e0924949738f75a0cdd8b49cef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08060e0924949738f75a0cdd8b49cef4">&#9670;&#160;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">run </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ejecuta el bucle principal mientras el nodo está en funcionamiento. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de datos miembro</h2>
+<a id="a779ec529b434395e4c5036b564352440" name="a779ec529b434395e4c5036b564352440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a779ec529b434395e4c5036b564352440">&#9670;&#160;</a></span>cartesian_pose_sub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cartesian_pose_sub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Suscriptor ROS utilizado para recibir estados de posición cartesiana. </p>
+
+</div>
+</div>
+<a id="a97b8810774b4f6947cb1b7ed05428998" name="a97b8810774b4f6947cb1b7ed05428998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97b8810774b4f6947cb1b7ed05428998">&#9670;&#160;</a></span>ef_pose_pub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ef_pose_pub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Publicador ROS utilizado para enviar estados de posición final del efector (EF) del robot. </p>
+
+</div>
+</div>
+<a id="af5593ea1754ac4cbbee2030e3e455b06" name="af5593ea1754ac4cbbee2030e3e455b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5593ea1754ac4cbbee2030e3e455b06">&#9670;&#160;</a></span>first_position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">first_position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Variable que se utiliza para almacenar la primera posición recibida en el callback pose_command_callback. </p>
+
+</div>
+</div>
+<a id="a381a4ca965170a3fa141b3f726f9cf97" name="a381a4ca965170a3fa141b3f726f9cf97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a381a4ca965170a3fa141b3f726f9cf97">&#9670;&#160;</a></span>fulcrum_fi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">fulcrum_fi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Valor que indica en que punto de la longitud de la herramienta se encuentra el punto de fulcro. </p>
+<p>Debe estar entre 0 y 1, siendo 0 el EF y el 1 el TCP. </p>
+
+</div>
+</div>
+<a id="a310b36190c861bdba5e456a2b6c569b1" name="a310b36190c861bdba5e456a2b6c569b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a310b36190c861bdba5e456a2b6c569b1">&#9670;&#160;</a></span>iiwa</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">iiwa</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Es una instancia de la clase iiwa_surgery que se utiliza para controlar el robot iiwa. </p>
+
+</div>
+</div>
+<a id="a44bafdbc77384bd65016c99b02e1df2a" name="a44bafdbc77384bd65016c99b02e1df2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44bafdbc77384bd65016c99b02e1df2a">&#9670;&#160;</a></span>joint_position_sub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">joint_position_sub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Suscriptor ROS utilizado para recibir estados de posición articular. </p>
+
+</div>
+</div>
+<a id="a4ab8dd351da659266eecab7fb62809e2" name="a4ab8dd351da659266eecab7fb62809e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ab8dd351da659266eecab7fb62809e2">&#9670;&#160;</a></span>joint_pub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">joint_pub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Publicador ROS utilizado para enviar mensajes de posición articular. </p>
+
+</div>
+</div>
+<a id="aea88ed09b81d0631b685f5163ec60ed5" name="aea88ed09b81d0631b685f5163ec60ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea88ed09b81d0631b685f5163ec60ed5">&#9670;&#160;</a></span>joint_state_sub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">joint_state_sub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Suscriptor ROS utilizado para recibir estados de posición articular. </p>
+
+</div>
+</div>
+<a id="a3483e115054a50cd58d11671bdcd00bc" name="a3483e115054a50cd58d11671bdcd00bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3483e115054a50cd58d11671bdcd00bc">&#9670;&#160;</a></span>joint_sub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">joint_sub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Suscriptor ROS utilizado para recibir comandos de posición articular. </p>
+
+</div>
+</div>
+<a id="a9892c05d87b83db50415f12c0c6e494b" name="a9892c05d87b83db50415f12c0c6e494b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9892c05d87b83db50415f12c0c6e494b">&#9670;&#160;</a></span>pose_sub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pose_sub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Suscriptor ROS utilizado para recibir comandos de posición cartesiana. </p>
+
+</div>
+</div>
+<a id="a70221305bf8db6392330ef28121efd25" name="a70221305bf8db6392330ef28121efd25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70221305bf8db6392330ef28121efd25">&#9670;&#160;</a></span>robot_ip</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot_ip</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Almacena la dirección IP del robot iiwa. </p>
+
+</div>
+</div>
+<a id="afe8830984c993345b268afcb0167ed63" name="afe8830984c993345b268afcb0167ed63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe8830984c993345b268afcb0167ed63">&#9670;&#160;</a></span>simulation_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">simulation_mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indica si el robot está en modo de simulación o no, siendo True para simulación y False para el robot real. </p>
+
+</div>
+</div>
+<a id="af97d684a9f599050036205b279b3ab67" name="af97d684a9f599050036205b279b3ab67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97d684a9f599050036205b279b3ab67">&#9670;&#160;</a></span>tcp_pose_pub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tcp_pose_pub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Publicador ROS utilizado para enviar estados de posición del Tool Center Point (TCP). </p>
+
+</div>
+</div>
+<a id="a7ffe27a3ee62905ee1d6420a1c0e6dc1" name="a7ffe27a3ee62905ee1d6420a1c0e6dc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ffe27a3ee62905ee1d6420a1c0e6dc1">&#9670;&#160;</a></span>tool_length</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tool_length</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Almacena la longitud de la herramienta utilizada en el robot. </p>
+
+</div>
+</div>
+<a id="a4dfb19dce70ba16b049eb381a299b0b2" name="a4dfb19dce70ba16b049eb381a299b0b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dfb19dce70ba16b049eb381a299b0b2">&#9670;&#160;</a></span>tool_orientation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tool_orientation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lista que almacena la orientación de la herramienta en radianes con el en formato [roll, pitch, yaw]. </p>
+
+</div>
+</div>
+<a id="af89c8c135334bd0bba79260300b99e14" name="af89c8c135334bd0bba79260300b99e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af89c8c135334bd0bba79260300b99e14">&#9670;&#160;</a></span>work_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">work_mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indica el modo de trabajo predeterminado del robot ("free" para movimiento libre y "pivot" para movimiento alrededor de punto de fulcro). </p>
+
+</div>
+</div>
+<hr/>La documentación de esta clase está generada del siguiente archivo:<ul>
+<li>C:/Users/Javier/Desktop/TFM/Repositorio/Archivos comentados para Doxygen/<a class="el" href="iiwa__control__node_8py.html">iiwa_control_node.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
