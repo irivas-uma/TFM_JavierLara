@@ -1,0 +1,2 @@
+Pruebas hechas para incrementos de 0.001 m
+Longitud de la herramienta = 0.186 m
