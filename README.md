@@ -7,4 +7,5 @@ Tutora: Irene Rivas Blanco
 Cotutora: Mª Carmen López Casado
 
 Máster en Ingeniería Industrial
+
 Departamento de Ingeniería de Sistemas y Automática. Universidad de Málaga, Escuela de Ingeniería Industriales.
